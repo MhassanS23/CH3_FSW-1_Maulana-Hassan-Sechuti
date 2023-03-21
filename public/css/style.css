@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --color-white: #fff;
+    --color-grey: #F1F3FF;
+    --color-green: #5CB85F;
+    --color-lime-green: #DEF1DF;
+    --color-black:#0000;
+    --color-bg:#CFD4ED;;
+    --color-bg1:#0D28A6;
+    --color-bg2: #424890;
+
+    --container-widht-lg: 76%;
+    --container-widht-md: 90%;
+    --container-widht-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+
+/* NAVIGATION BAR */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-lime-green);
+    z-index: 3;
+    transition: 0.3s ease-in-out;
+}
+
+.scrolled{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color:var(--color-bg1);
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
+.scrolled a{
+    color: var(--color-white);
+}
+
+.scrolled .side-nav i{
+    color: var(--color-white);
+}
+.scrolled .side-nav a{
+    color: black;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+}
+
+.nav-link{
+    color: var(--color-black);
+}
+
+.navbar-nav{
+    gap: 1rem;
+}
+
+.btn-register{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 6px 12px;
+    border-radius: 0.2rem;
+}
+
+.navbar-brand{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* HEADER */
+
+header{
+    background: var(--color-lime-green);
+    overflow: hidden;
+    height: 100vh;
+    height: fit-content;
+}
+
+.header-container{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.header-left{
+    padding-left: 6rem;
+    padding-right: 2rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.header-left h1{
+    font-weight: 700;
+    font-size: 34px;
+    width: 100%;
+    line-height: 150%;
+}
+
+.header-left p{
+    text-align: justify;
+    padding-right: 2rem;
+    line-height: 20px;
+}
+
+.header-right img{
+    width: 100%;
+    height: 100%;
+}
+
+.offcanvas .offcanvas-end{
+    width: 50%;
+}
+
+
+
+/* SERVICE CSS */
+.service-container{
+    padding-top: 10rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.service-left{
+    align-self: center;
+    justify-self: center;
+}
+
+.service-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-right ul{
+    padding-left: 0;
+}
+
+.service-right ul li{
+    display: flex;
+    gap: 1rem;
+}
+
+.service-right ul li img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.service-right h1{
+    font-weight: 700;
+    font-size: 34px;
+    width: 100%;
+    line-height: 150%;
+    margin-bottom: 2rem;
+}
+
+.service-right p{
+    text-align: justify;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+
+/* WHYUS */
+
+.whyus-container{
+    padding-top: 10rem;
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whyus-container h1{
+    font-weight: 700;
+    font-size: 34px;
+    width: 100%;
+}
+
+.list-card-whyus .card-body img{
+    margin-bottom: 0.8rem;
+}
+.list-card-whyus .card-body h5{
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.list-card-whyus .card:hover{
+    box-shadow: rgba(25, 199, 252, 0.199) -10px 10px, rgba(41, 16, 184, 0.19) -20px 20px ;
+    cursor: pointer;
+}
+
+.list-card-whyus .card-body{
+    height: 13rem;
+}
+/* .list-card-whyus .card-body .description{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.list-card-whyus .card-body:hover > .description{
+    height: 100%;
+    transition: all 0.2s ease;
+} */
+
+/* TESTIMONIAL */
+.testimonial-container{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-container h1{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 150%;
+}
+.testimonial-container h5{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.testimonial-container .card{
+    background-color: var(--color-grey);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+
+.star{
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-container .card-body{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mySwiper{
+    width: 100%;
+}
+
+.swiper-wrapper{
+    width: 40%;
+}
+
+.btn-tanda{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.btn-tanda .swiper-next i{
+    font-size: 1rem;
+    color: var(--color-white);
+    background: var(--color-green);
+    padding: 0.5rem 0.7rem; 
+    border-radius: 100%;
+}
+.btn-tanda .swiper-prev i{
+    font-size: 1rem;
+    color: black;
+    background: var(--color-white);
+    border: 1px solid grey;
+    padding: 0.5rem 0.7rem; 
+    border-radius: 100%;
+}
+
+
+/* BANNER */
+.banner-container{
+    padding-top: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container .card-body p{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card.banner{
+    background-color: var(--color-bg1);
+    color: var(--color-white);
+    width: 80%;
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 6rem;
+    border-radius: 1rem;
+}
+
+
+/* FAQ */
+
+.faq-container{
+    padding-top: 10rem;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.faq-left{
+    justify-self: center;
+    width: 100%;
+}
+
+.faq-left h1{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 150%;
+}
+
+.faq-right{
+    justify-self: center;
+    width: 100%;
+}
+
+.accordion-items{
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+}
+
+.accordion-flush{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    gap: 6rem;
+    height: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    color: black;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-2 ul{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-2 ul li a{
+    font-weight: 700;
+}
+
+.footer-3{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-3 ul{
+    display: flex;
+    gap: 1rem;
+    padding-left: 0;
+}
+
+
+/* CARD SEARCH */
+
+.search-container{
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: -4rem;
+}
+
+.search-container .card-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.select-driver{
+    width: 100%;
+}
+.select-penumpang{
+    width: 100%;
+}
+
+.btn-search{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 0.45rem 0.5rem;
+    border-radius: 0.2rem;
+    width: 40%;
+    align-self: flex-end;
+}
+
+.select-penumpang .form-control{
+    background: url(../images/user-regular.svg) no-repeat scroll ;
+    background-position: center;     
+    background-position-x: calc(100% - 12px);
+    background-size: 1rem;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 992px) {
+    .side-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .header-left h1{
+        font-size: 25px;
+    }
+    .service-right h1{
+        font-size: 25px;
+    }
+    .faq-left h1{
+        font-size: 25px;
+    }
+    .service-left img{
+        width: 20rem;
+    }
+
+    footer{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        gap: 3rem;
+    }
+    .list-card-whyus .card-body{
+        height: 15rem;
+    }
+    .search-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: -2rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container-nav{
+        padding: 0.5rem 1rem;
+    }
+    .list-card-whyus .card-body{
+        height: 12rem;
+    }
+
+    .side-nav i{
+        font-size: 1.5rem;
+        color: rgb(66, 63, 63);
+    }
+
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .header-left h1{
+        font-size: 34px;
+        margin-bottom: 2rem;
+    }
+
+    .header-right{
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-right img{
+        width: 90%;
+    }
+
+    .navigation{
+        display: none;
+    }
+    .service-container{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .banner-container{
+        padding-top: 0;
+        height: 100%;
+    }
+
+    .service-right p{
+        padding-right: 1rem;
+    }
+
+    .service-left{
+        align-self: center;
+        padding: 5rem 1rem 1rem;
+    }
+    .whyus-container{
+        height: 100%;
+        padding: 4rem 1.5rem;
+    }
+    .whyus-container .row{
+        gap: 1rem;
+        justify-content: center;
+    }
+    .whyus-container h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .whyus-container p{
+        text-align: center;
+    }
+
+    .card-body p{
+        text-align: start;
+    }
+
+    .testimonial-container{
+        height: 100%;
+        padding: 4rem 1.5rem;
+    }
+    .testimonial-container .card-body{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .testimonial-container .card-body p{
+        text-align: center;
+    }
+    .testimonial-container p{
+        text-align: center;
+    }
+    .banner-container .card-body p{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    
+    .card.banner{
+        padding: 3rem 2rem;
+    }
+
+    .faq-container{
+        height: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .faq-left{
+        text-align: center;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer-3{
+        gap: 0;
+    }
+    .search-container .card-body{
+        flex-direction: column;
+    }
+    .btn-search{
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header-right img{
+        width: 95%;
+    }
+    .service-left img{
+        width: 18rem;
+    }
+    .whyus-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .header-left{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .service-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .list-card-whyus .row{
+        gap: 1rem;
+    }
+    .whyus-container h1{
+        text-align: center;
+    }
+}
