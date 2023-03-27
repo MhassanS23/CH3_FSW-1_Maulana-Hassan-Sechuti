@@ -441,10 +441,83 @@ footer a{
     background-size: 1rem;
 }
 
+/* RESULT */
 
+.result-container{
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: 2rem;
+}
 
+.result{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
 
+.result .card{
+    width: 100%;
+    height: 42rem;
+}
 
+.result a{
+    text-decoration: none;
+}
+
+.result .card img{
+    width: 100%;
+    height: 15rem;
+}
+
+.result .card .card-title{
+    font-weight: 700;
+}
+
+.result .card-body{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.result i{
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.cost{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card-fill{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 14rem;
+}
+
+.btn-choose{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 1rem 0.5rem;
+    border-radius: 0.2rem;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    right: 3rem;
+    left: 2.5rem;
+}
+
+option:hover{
+    color: var(--color-green);
+    background-color: var(--color-lime-green);
+}
+
+.data{
+    text-align: center;
+    width: 100%;
+}
 /* RESPONSIVE */
 
 @media (min-width: 992px) {
@@ -611,6 +684,26 @@ footer a{
     .btn-search{
         width: 100%;
     }
+    .result{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .result .card{
+        width: 100%;
+        height: 100%;
+    }
+    .btn-choose{
+        width: 90%;
+        bottom: 1rem;
+        right: 2rem;
+        left: 1.5rem;
+    }
+    .result .card img{
+        width: 100%;
+        height: 20rem;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -643,5 +736,15 @@ footer a{
     }
     .whyus-container h1{
         text-align: center;
+    }
+    .result-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .btn-choose{
+        width: 90%;
+        bottom: 1rem;
+        right: 2rem;
+        left: 1rem;
     }
 }

@@ -5,6 +5,7 @@ class Car {
     this.list = cars.map((i) => new this(i));
   }
 
+
   constructor({
     id,
     plate,
@@ -41,12 +42,21 @@ class Car {
 
   render() {
     return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
+    <div class="card shadow">
+      <img src="${this.image}" class="card-img-top" alt="${this.manufacture}">
+      <div class="card-body">
+      <h6 class="card-title">${this.manufacture}/${this.model}</h6>
+      <p class="cost">${this.rentPerDay} / hari</p>
+      <p class="card-text">${this.description} ${this.availableAt}</p>
+
+      <div class="card-fill">
+        <div><i class="fa-solid fa-user-group"></i>${this.capacity} Orang</div>
+        <div><i class="fa-solid fa-gear"></i>${this.transmission}</div>
+        <div><i class="fa-solid fa-calendar "></i>Tahun ${this.year}</div>
+        <a class="btn-choose">Pilih Mobil</a>
+      </div>
+      </div>
+    </div>
     `;
   }
 }
