@@ -122,7 +122,6 @@
 <section class="search-container">
     <div class="card w-100 shadow">
         <div class="card-body">
-
             <div class="select-driver">
                 <label>Tipe Driver</label>
                 <select class="form-select" id="opsi-driver" aria-label="Default select example" required>
@@ -137,7 +136,84 @@
             </div>
             <div class="select-waktu">
                 <label>Waktu Jemput/Ambil</label>
-                <input class="form-control" type="time" id="waktu"  required/>
+                <select class="form-select" id="waktu" data-size="5">
+                    <option class="opsi" value="" selected hidden>Pilih Waktu</option>
+                    <option class="opsi" value="06:00">
+                        06.00 WIB
+                    </option>
+                    <option class="opsi" value="07:00">
+                        <p>07.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="08:00">
+                        <p>08.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="09:00">
+                        <p>09.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="10:00">
+                        <p>10.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="11:00">
+                        <p>11.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="12:00">
+                        <p>12.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="13:00">
+                        <p>13.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="14:00">
+                        <p>14.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="15:00">
+                        <p>15.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="16:00">
+                        <p>16.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="17:00">
+                        <p>17.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="18:00">
+                        <p>18.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="19:00">
+                        <p>19.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="20:00">
+                        <p>20.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="21:00">
+                        <p>21.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="22:00">
+                        <p>22.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="23:00">
+                        <p>23.00</p>
+                        <p>WIB</p>
+                    </option>
+                    <option class="opsi" value="24:00">
+                        <p>24.00</p>
+                        <p>WIB</p>
+                    </option>
+                </select>
             </div>
             <div class="select-penumpang">
                 <label>Jumlah Penumpang (Optional)</label>
@@ -145,7 +221,6 @@
             </div>
             
             <button type="submit" class="btn-search" id="load-btn">Cari Mobil</button>
-
         </div>
       </div>
 </section>

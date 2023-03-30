@@ -424,6 +424,9 @@ footer a{
 .select-penumpang{
     width: 100%;
 }
+.select-waktu{
+    width: 100%;
+}
 
 .btn-search{
     background-color: var(--color-green);
@@ -435,7 +438,7 @@ footer a{
 }
 
 .select-penumpang .form-control{
-    background: url(../images/user-regular.svg) no-repeat scroll ;
+    background: url(../images/user-group-solid.svg) no-repeat scroll ;
     background-position: center;     
     background-position-x: calc(100% - 12px);
     background-size: 1rem;
@@ -509,14 +512,21 @@ footer a{
     left: 2.5rem;
 }
 
-option:hover{
-    color: var(--color-green);
-    background-color: var(--color-lime-green);
-}
-
 .data{
     text-align: center;
     width: 100%;
+}
+
+.select-waktu .form-select{
+    background: url(../images/clock-regular.svg) no-repeat scroll ;
+    background-position: center;     
+    background-position-x: calc(100% - 12px);
+    background-size: 1rem;
+}
+
+option.opsi{
+    color: var(--color-green);
+    background: var(--color-lime-green);
 }
 /* RESPONSIVE */
 

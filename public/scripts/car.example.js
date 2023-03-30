@@ -1,3 +1,12 @@
+function formatRupiah(params) {
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    maximumFractionDigits: 0,
+    minimumFractionDigits: 0,
+  }).format(params);
+}
+
 class Car {
   static list = [];
 
@@ -41,12 +50,13 @@ class Car {
   }
 
   render() {
+    const rent = formatRupiah(this.rentPerDay);
     return `
     <div class="card shadow">
       <img src="${this.image}" class="card-img-top" alt="${this.manufacture}">
       <div class="card-body">
       <h6 class="card-title">${this.manufacture}/${this.model}</h6>
-      <p class="cost">${this.rentPerDay} / hari</p>
+      <p class="cost">${rent} / hari</p>
       <p class="card-text">${this.description} ${this.availableAt}</p>
 
       <div class="card-fill">
@@ -60,3 +70,4 @@ class Car {
     `;
   }
 }
+
