@@ -80,7 +80,6 @@ class App {
     }
 
     const cars = await Binar.listCars(filter);
-    console.log(cars)
     Car.init(cars);
 
     if(cars.length == 0 || cars == undefined){
@@ -106,7 +105,6 @@ class App {
   async load() {
     const cars = await Binar.listCars();
     Car.init(cars);
-    console.log(cars)
   }
 
   clear = () => {

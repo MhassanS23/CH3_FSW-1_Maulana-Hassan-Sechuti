@@ -8,5 +8,17 @@
   "private": false,
   "scripts": {
     "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MhassanS23/CH3_FSW-1_Maulana-Hassan-Sechuti.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/MhassanS23/CH3_FSW-1_Maulana-Hassan-Sechuti/issues"
+  },
+  "homepage": "https://github.com/MhassanS23/CH3_FSW-1_Maulana-Hassan-Sechuti#readme",
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
