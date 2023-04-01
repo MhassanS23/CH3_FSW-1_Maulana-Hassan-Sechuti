@@ -63,7 +63,7 @@ class App {
     //     cars.available == false && cars.capacity >= penumpang && cars.availableAt <= datetime
     //   );
     // }
-    if(opsiDriver === "" || penumpang === "" || tanggal == ""){
+    if(opsiDriver === "" || penumpang === "" || tanggal == "" || waktu == ""){
         alert("Please Fill Filter Form")
         return;
       }
